@@ -12,7 +12,6 @@ public class Clothing {
 
   public static Clothing createClothing(String name, int yearCreated, double price, Branding brand)
    {
-     
     return Clothing.builder()
       .name(name)
 
