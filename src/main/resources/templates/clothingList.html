@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clothing List</title>
+  </head>
+  <body>
+    <h1>Clothing List</h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Year Produced</th>
+        <th>Price</th>
+        <th>Brand</th>
+      </tr>
+      <tr th:each="clothing : ${clothesList}">
+        <td th:text="${clothing.name}"></td>
+        <td th:text="${clothing.yearProduced}"></td>
+        <td th:text="${clothing.price}"></td>
+        <td th:text="${clothing.brand.title}"></td>
+      </tr>
+    </table>
+  </body>
+</html>
